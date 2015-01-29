@@ -44,7 +44,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_KERNEL_SOURCE         := kernel/lge/fx3
 TARGET_KERNEL_CONFIG         := fx3_spcs_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
-BOARD_KERNEL_CMDLINE := androidboot.hardware=fx3s user_debug=31 vmalloc=308M
+BOARD_KERNEL_CMDLINE := androidboot.hardware=fx3s user_debug=31 vmalloc=308M androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 BOARD_KERNEL_PAGESIZE := 2048

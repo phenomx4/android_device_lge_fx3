@@ -154,6 +154,7 @@ bin/rmt_storage
 etc/firmware/fw_bcmdhd.bin
 etc/firmware/fw_bcmdhd_apsta.bin
 etc/firmware/fw_bcmdhd_p2p.bin
+etc/wifi/bcmdhd.cal
 
 # Bluetooth
 bin/btld

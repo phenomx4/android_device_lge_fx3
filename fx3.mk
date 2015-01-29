@@ -90,6 +90,12 @@ PRODUCT_PACKAGES += \
         libdashplayer \
         qcmediaplayer
 
+# Loki
+PRODUCT_PACKAGES += \
+    loki_tool \
+    loki.sh \
+    recovery-transform.sh
+
 # ramdisk
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/lge/fx3/ramdisk,root)

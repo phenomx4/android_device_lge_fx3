@@ -4,12 +4,12 @@ etc/audio_policy.conf
 etc/init.qcom.audio.sh
 etc/snd_soc_msm/snd_soc_msm
 etc/snd_soc_msm/snd_soc_msm_2x
-etc/snd_soc_msm/snd_soc_msm_2x_auxpcm
+#etc/snd_soc_msm/snd_soc_msm_2x_auxpcm
 etc/snd_soc_msm/snd_soc_msm_2x_Fusion3
-etc/snd_soc_msm/snd_soc_msm_2x_Fusion3_auxpcm
-etc/snd_soc_msm/snd_soc_msm_auxpcm
+#etc/snd_soc_msm/snd_soc_msm_2x_Fusion3_auxpcm
+#etc/snd_soc_msm/snd_soc_msm_auxpcm
 etc/snd_soc_msm/snd_soc_msm_Sitar
-etc/snd_soc_msm/snd_soc_msm_Sitar_auxpcm
+#etc/snd_soc_msm/snd_soc_msm_Sitar_auxpcm
 etc/snd_soc_msm/snd_soc_msm_Taiko
 lib/libacdbloader.so
 lib/libaudcal.so
@@ -78,7 +78,7 @@ lib/libchromatix_ov2720_hfr.so
 lib/libchromatix_s5k4e5ya_preview.so
 lib/libchromatix_ov2720_preview.so         
 lib/libchromatix_s5k4e5ya_zsl.so
-bin/mm-qcamera-app
+#bin/mm-qcamera-app
 bin/mm-qcamera-daemon
 bin/v4l2-qcamera-app
 lib/libgemini.so
@@ -101,8 +101,9 @@ lib/liboemcamera.so
 lib/hw/camera.msm8960.so
 lib/libmmcamera_imx091.so
 lib/libHDR.so
-lib/libmorpho_noise_reduction
-lib/libmorpho_panorama_wa_viewer
+lib/libmorpho_noise_reduction.so
+lib/libmorpho_panorama_wa_viewer.so
+lib/libOlaLGECameraJNI_3b.so
 
 
 # scripts
@@ -150,22 +151,22 @@ bin/rmt_storage
 
 
 #WiFi
-system/etc/firmware/fw_bcmdhd.bin
-system/etc/firmware/fw_bcmdhd_apsta.bin
-system/etc/firmware/fw_bcmdhd_p2p.bin
+etc/firmware/fw_bcmdhd.bin
+etc/firmware/fw_bcmdhd_apsta.bin
+etc/firmware/fw_bcmdhd_p2p.bin
 
 # Bluetooth
 bin/btld
 bin/BCM4330B1_002.001.003.0967.1019.hcd
 
 # GPS
-bin/gpsone_daemon
-lib/libgeofence.so
-lib/libloc_api_v02.so
+#bin/gpsone_daemon
+#lib/libgeofence.so
+#lib/libloc_api_v02.so
 
 # FM
 etc/init.qcom.fm.sh
-bin/fm_qsoc_patches
+#bin/fm_qsoc_patches
 
 # Time services
 bin/time_daemon
@@ -225,5 +226,5 @@ bin/cnd
 bin/mm-pp-daemon
 bin/port-bridge
 bin/qcks
-bin/sapd
+#bin/sapd
 bin/usbhub_init

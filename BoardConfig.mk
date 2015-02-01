@@ -141,7 +141,7 @@ BOARD_HAVE_NEW_QC_GPS := true
 
 # Wifi
 BOARD_WLAN_DEVICE 		:= bcmdhd
-BOARD_WLAN_DEVICE_REV 		:= bcm4334
+BOARD_WLAN_DEVICE_REV 		:= bcm4330
 WIFI_DRIVER_FW_PATH_PARAM 	:= "/sys/module/bcmdhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA 	:= "/system/etc/firmware/fw_bcmdhd.bin"
 WIFI_DRIVER_FW_PATH_AP 		:= "/system/etc/firmware/fw_bcmdhd_apsta.bin"

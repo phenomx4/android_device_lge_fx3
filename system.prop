@@ -143,3 +143,10 @@ lge.nfc.rwp2pserversync=yes
 lge.nfc.vendor=nxp
 lge.nfc.disableinpoweroff=yes
 lge.nfc.googlewallet=yes
+
+wlan.chip.vendor=brcm
+wlan.chip.version=bcm4330
+wlan.lge.concurrency=SCC
+wifi.supplicant_scan_interval=50
+wifi.lge.patch=true
+wifi.lge.hanglessid=false

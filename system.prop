@@ -130,3 +130,16 @@ service.brcm.bt.aptx=0
 
 # support 3-way call
 service.brcm.bt.3way_support=true#
+
+ro.nfc.port=I2C
+lge.nfc.nxpstablepatch=yes
+lge.nfc.indicator=global
+lge.nfc.setype=ese
+lge.nfc.defaultonoff=all
+lge.nfc.fdtval=FB
+lge.nfc.asynccardcontrol=yes
+lge.nfc.handover=googlenative
+lge.nfc.rwp2pserversync=yes
+lge.nfc.vendor=nxp
+lge.nfc.disableinpoweroff=yes
+lge.nfc.googlewallet=yes

@@ -151,8 +151,8 @@ bin/rmt_storage
 
 
 #WiFi
-#etc/firmware/fw_bcmdhd.bin
-#etc/firmware/fw_bcmdhd_apsta.bin
+etc/firmware/fw_bcmdhd.bin
+etc/firmware/fw_bcmdhd_apsta.bin
 etc/firmware/fw_bcmdhd_p2p.bin
 etc/firmware/fw_bcmdhd_mfg.bin
 etc/wifi/bcmdhd.cal

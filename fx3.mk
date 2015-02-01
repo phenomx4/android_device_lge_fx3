@@ -61,6 +61,11 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+#Wifi
+PRODUCT_PACKAGES += \
+    libnetcmdiface \
+    dhdutil
+
 PRODUCT_PACKAGES += \
 	Torch \
 	FloatSysPop \

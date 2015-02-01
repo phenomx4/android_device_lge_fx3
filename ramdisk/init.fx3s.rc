@@ -184,6 +184,16 @@ on boot
     # an ack packet comes out of order
     write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
 
+    # Permissions for lights
+    chown system system /sys/class/leds/led:rgb_red/brightness
+    chown system system /sys/class/leds/led:rgb_green/brightness
+    chown system system /sys/class/leds/led:rgb_blue/brightness
+
+    #Get rid of pulsing lights
+    write /sys/class/leds/led:rgb_red/brightness 0
+    write /sys/class/leds/led:rgb_green/brightness 0
+    write /sys/class/leds/led:rgb_blue/brightness 0
+
 # import cne init file
 on post-fs
     export_rc /persist/init.cne.rc

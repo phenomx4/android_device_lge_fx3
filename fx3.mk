@@ -2,6 +2,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 $(call inherit-product-if-exists, vendor/lge/fx3/fx3-vendor.mk)
 
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
+
 DEVICE_PACKAGE_OVERLAYS += device/lge/fx3/overlay
 
 # This device is hdpi.

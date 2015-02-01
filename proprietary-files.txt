@@ -181,6 +181,7 @@ bin/time_daemon
 lib/libtime_genoff.so
 
 # Sensors
+bin/sensord
 bin/sensors.qcom
 lib/libsensor1.so
 lib/libsensor_reg.so

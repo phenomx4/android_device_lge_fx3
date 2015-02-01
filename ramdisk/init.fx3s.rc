@@ -58,6 +58,7 @@ on init
     	start bootlogo
 
 on fs
+        setprop ro.crypto.fuse_sdcard true
    	mount ext4 /dev/block/platform/msm_sdcc.1/by-name/carrier /carrier nosuid nodev barrier=1 noauto_da_alloc
    	chown system lg_fota /carrier
    	chmod 771 /carrier

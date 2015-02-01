@@ -115,11 +115,8 @@ ro.ril.transmitpower=true
 #
 #Simulate sdcard on /data/media
 #
-# LGE_CHANGE_S
-# If you use Internal-SD with FUSE, comment-out below
-# 2012-01-08 warkap.seo@lge.com
-#persist.fuse_sdcard=false
-# LGE_CHANGE_E
+ro.fuse_sdcard=true
+
 ro.hwui.text_cache_width=2048
 
 #

@@ -26,5 +26,6 @@ def FullOTA_InstallEnd(info):
   info.script.script = [cmd for cmd in info.script.script if not "boot.img" in cmd]
   info.script.script = [cmd for cmd in info.script.script if not "show_progress(0.100000, 0);" in cmd]
   info.script.AppendExtra('package_extract_file("boot.img", "/tmp/boot.img");')
-  info.script.AppendExtra('assert(run_program("/system/etc/loki.sh") == 0);')
+  info.script.AppendExtra('set_perm(0, 0, 0777, "/system/etc/loki.sh");')
+  info.script.AppendExtra('run_program("/system/etc/loki.sh");')
   info.script.AppendExtra('delete("/system/etc/loki.sh");')

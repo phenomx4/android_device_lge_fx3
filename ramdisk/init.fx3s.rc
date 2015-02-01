@@ -99,6 +99,10 @@ on boot
     chmod 0600 /dev/pn544
     chown nfc nfc /dev/pn544
 
+    # WIFI RFKILL
+    chown wifi wifi /dev/rfkill
+    chmod 0600 /dev/rfkill
+
     #Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
     chmod 2770 /dev/socket/qmux_radio

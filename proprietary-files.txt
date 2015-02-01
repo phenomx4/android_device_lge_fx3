@@ -151,14 +151,21 @@ bin/rmt_storage
 
 
 #WiFi
-etc/firmware/fw_bcmdhd.bin
-etc/firmware/fw_bcmdhd_apsta.bin
+#etc/firmware/fw_bcmdhd.bin
+#etc/firmware/fw_bcmdhd_apsta.bin
 etc/firmware/fw_bcmdhd_p2p.bin
+etc/firmware/fw_bcmdhd_mfg.bin
 etc/wifi/bcmdhd.cal
 
 # Bluetooth
 bin/btld
 bin/BCM4330B1_002.001.003.0967.1019.hcd
+
+# NFC
+lib/hw/nfc.default.so
+vendor/firmware/libpn544_fw.so
+etc/nfcee_access.xml
+
 
 # GPS
 #bin/gpsone_daemon

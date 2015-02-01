@@ -104,6 +104,7 @@ lib/libHDR.so
 lib/libmorpho_noise_reduction.so
 lib/libmorpho_panorama_wa_viewer.so
 lib/libOlaLGECameraJNI_3b.so
+lib/libmmipl.so
 
 
 # scripts

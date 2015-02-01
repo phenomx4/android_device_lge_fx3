@@ -7,11 +7,15 @@
 
 #<src>                                                <mnt_point>  <type>  <mnt_flags and options>                     <fs_mgr_flags>
 /dev/block/platform/msm_sdcc.1/by-name/system         /system      ext4    rw,barrier=1                                                wait
+/dev/block/platform/msm_sdcc.1/by-name/userdata       /data        ext4    nosuid,nodev,barrier=1,noauto_da_alloc,errors=continue      wait,check,encryptable=/dev/block/platform/msm_sdcc.1/by-name/encrypt
 /dev/block/platform/msm_sdcc.1/by-name/boot           /boot        emmc    defaults                                                    defaults
 /dev/block/platform/msm_sdcc.1/by-name/recovery       /recovery    emmc    defaults                                                    defaults
-/dev/block/platform/msm_sdcc.1/by-name/userdata       /data        ext4    nosuid,nodev,barrier=1,noauto_da_alloc,errors=continue      wait,check,encryptable=/dev/block/platform/msm_sdcc.1/by-name/encrypt
-/dev/block/platform/msm_sdcc.1/by-name/cache          /cache       ext4    nosuid,nodev,barrier=1                                      wait,check
 /dev/block/platform/msm_sdcc.1/by-name/sns            /sns         ext4    nosuid,nodev,barrier=1,noauto_da_alloc,errors=continue      wait,check
 /dev/block/platform/msm_sdcc.1/by-name/mpt            /mpt         ext4    nosuid,nodev,barrier=1,noauto_da_alloc,errors=continue      wait,check
 /dev/block/platform/msm_sdcc.1/by-name/drm            /persist-lg  ext4    nosuid,nodev,barrier=1,noauto_da_alloc,errors=continue      wait,check
+
+
+# vold managed volumes
+/dev/block/platform/msm_sdcc.3/by-num/p1              auto               auto      defaults         wait,voldmanaged=sdcard1:auto
+/devices/platform/msm_hsusb_host/usb1                 auto               auto      defaults         wait,voldmanaged=sda:auto
 

@@ -32,22 +32,8 @@ import init.lge.usb.rc
 on early-init
     mkdir /firmware 0771 system system
     symlink /data/tombstones /tombstones
-    # for backwards compatibility
-    export EXTERNAL_STORAGE /storage/sdcard0
-    mkdir /storage 0775 root system
-    mkdir /storage/sdcard0 0000 system system
-    symlink /storage/sdcard0 /sdcard
-    symlink /storage/sdcard0 /mnt/sdcard
-    mkdir /storage/external_SD 0000 system system
 	
 on fs
-
-    wait /dev/block/platform/msm_sdcc.1/by-name/system
-    chmod 0775 /sbin/e2fsck_static
-    exec /sbin/e2fsck_static -fy /dev/block/platform/msm_sdcc.1/by-name/system
-    # LGE_CHANGE_S, [2012-03-21], ilsoo.jung@lge.com, NOT_USE_SYSTEM_REMOUNT  never remount system partition.
-    mount ext4 /dev/block/platform/msm_sdcc.1/by-name/system /system ro barrier=1
-    # LGE_CHANGE_E, [2012-03-21], ilsoo.jung@lge.com, NOT_USE_SYSTEM_REMOUNT  never remount system partition.
 
     mkdir /mpt 0775 system system
     mkdir /sns 0771 system system
